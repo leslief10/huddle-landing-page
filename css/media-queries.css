@@ -1,0 +1,105 @@
+@media only screen and (min-width: 750px) {
+  body {
+    background-image: url('/images/bg-desktop.svg');
+    background-size: cover;
+  }
+
+  header {
+    height: 130px;
+  }
+
+  header img {
+    width: 200px;
+    margin: 50px 0 0 78px;
+  }
+
+  .landing-container {
+    height: 100vh;
+  }
+
+  .landing-container__image {
+    width: 510px;
+    margin-top: -20px;
+  }
+
+  .introductory-section h1 {
+    font-size: 3rem;
+  }
+
+  .introductory-section p {
+    font-size: 1.7rem;
+    line-height: 2.7rem;
+  }
+
+  .register-button {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .landing-container {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .landing-container__image {
+    width: 698px;
+    grid-area: 1 / 1 / 2 / 2;
+    margin: 77px 0 0 55px;
+  }
+
+  .introductory-section {
+    grid-area: 1 / 2 / 2 / 4;
+  }
+
+  .landing-social {
+    margin-right: 25px;
+    margin-top: 0;
+    grid-area: 2 / 3 / 3 / 4;
+    gap: 15px;
+    justify-self: center;
+    align-self: flex-start;
+  }
+
+  .landing-social img {
+    width: 35px;
+  }
+
+  footer {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .landing-container__image {
+    margin-left: 81px;
+  }
+
+  .introductory-section {
+    align-items: flex-start;
+    margin: 0 0 0 25px;
+    padding-right: 70px;
+  }
+
+  .introductory-section h1 {
+    margin-bottom: 30px;
+    font-size: 4rem;
+    line-height: 6rem;
+    text-align: left;
+  }
+
+  .introductory-section p {
+    margin-bottom: 27px;
+    font-size: 1.9rem;
+    line-height: 2.7rem;
+    text-align: left;
+  }
+
+  .register-button {
+    height: 56px;
+    font-size: 1.9rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 7px 9px;
+  }
+} 

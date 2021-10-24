@@ -1,0 +1,127 @@
+:root {
+  --primary-color: #674BAF;
+  --secondary-color: #E882E8;
+  --main-font: 'Poppins', sans-serif; 
+  --secondary-font: 'Open Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--primary-color);
+  background-image: url('/images/bg-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+}
+
+header img {
+  width: 120px;
+  margin: 37px 0 0 39px;
+}
+
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 375px;
+  height: auto;
+}
+
+.landing-container__image {
+  width: 296px;
+  margin-top: 55px;
+}
+
+.introductory-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  padding: 0 25px;
+}
+
+.introductory-section h1 {
+  margin-bottom: 28px;
+  font-family: var(--main-font);
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 3.5rem;
+  text-align: center;
+  color: white;
+}
+
+.introductory-section p {
+  margin-bottom: 34px;
+  font-family: var(--secondary-font);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  text-align: center;
+  color: white;
+}
+
+.register-button {
+  width: 200px;
+  height: 40px;
+  background-color: white;
+  font-family: var(--secondary-font);
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1rem;
+  text-align: center;
+  color: var(--primary-color);
+  border-radius: 30px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+}
+
+.register-button:hover {
+  background-color: var(--secondary-color);
+  color: white;
+  cursor: pointer;
+}
+
+.landing-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 105px;
+  margin-top: 63px;
+}
+
+.landing-social img {
+  width: 25px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(293deg) brightness(109%) contrast(101%);
+}
+
+.landing-social img:hover {
+  filter: invert(79%) sepia(86%) saturate(4176%) hue-rotate(236deg) brightness(90%) contrast(103%);
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 50px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+
+footer a {
+  color: var(--secondary-color);
+}
