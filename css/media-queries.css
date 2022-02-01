@@ -1,6 +1,6 @@
 @media only screen and (min-width: 750px) {
   body {
-    background-image: url('/images/bg-desktop.svg');
+    background-image: url('../images/bg-desktop.svg');
     background-size: cover;
   }
 
@@ -18,7 +18,7 @@
   }
 
   .landing-container__image {
-    width: 510px;
+    min-width: 510px;
     margin-top: -20px;
   }
 
@@ -45,7 +45,7 @@
   }
 
   .landing-container__image {
-    width: 698px;
+    min-width: 698px;
     grid-area: 1 / 1 / 2 / 2;
     margin: 77px 0 0 55px;
   }
@@ -73,6 +73,11 @@
 }
 
 @media only screen and (min-width: 1440px) {
+
+  .landing-container {
+    min-height: 100vh;
+  }
+
   .landing-container__image {
     margin-left: 81px;
   }
